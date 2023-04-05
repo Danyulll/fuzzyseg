@@ -7,7 +7,7 @@ FCM: Fuzzy C-Means Clustering
 'FCM' is used the segment a user specified image using the Fuzzy C-Means clustering algorithm.
 }
 \usage{
-FCM(image_path, save_to_path, numClust=3, m=2, maxIter=20, clusterMethod="Euclidean", centroid_init="None",  error=0.001, hard="True", popSize=50, maxGen=50, bboAlpha=0.25, E=1, I=1, mutationRate=0.25, mutationStrength=1, initError=0.001, fAlpha=0.05, fBeta=1, fGamma=1.5)
+FCM(image_path, save_to_path, numClust=3L, m=2, maxIter=20L, clusterMethod="Euclidean", centroid_init="None",  error=0.001, hard="True", popSize=50L, maxGen=50L, bboAlpha=0.25, E=1, I=1, mutationRate=0.25, mutationStrength=1, initError=0.001, fAlpha=0.05, fBeta=1, fGamma=1.5)
 }
 
 \arguments{
