@@ -6,7 +6,7 @@ Segmented images are outputted in the specified save to directory. Additionally,
 
 ### Installing the package
 
-Currently available using devtools:
+Currently available using devtools: (not yet working) 
 
 ```r
 devtools::install_github("Danyulll/fuzzyseg")
