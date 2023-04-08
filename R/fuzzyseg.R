@@ -1,7 +1,8 @@
+#' @export
 FCM <-
   function(image_path = "",
            save_to_path = "",
-           numClust = 3L, 
+           numClust = 3L,
            m = 2,
            maxIter = 50L,
            clusterMethod = "Euclidean",
@@ -19,25 +20,25 @@ FCM <-
            fAlpha = 0.05,
            fBeta = 1L,
            fGamma = 1.5) {
-    
+
     # Check if read in image exists
     if (!file.exists(image_path))
       stop(paste("Cannot find file: ", image_path))
-    
+
     # Check if image is a jpg
     if (!grepl("\\.jpg$", image_path))
       stop("Image is not a jpg")
-    
+
     # Check if save to directory exists
     if (!dir.exists(save_to_path))
       stop(paste("Cannot find directory: ", save_to_path))
-    
+
     # Check if integer arguments are integers
     stopifnot(is.integer(numClust))
     stopifnot(is.integer(maxIter))
     stopifnot(is.integer(popSize))
     stopifnot(is.integer(maxGen))
-    
+
     # Check if float arguments are floats
     stopifnot(is.numeric(m))
     stopifnot(is.numeric(error))
@@ -50,18 +51,18 @@ FCM <-
     stopifnot(is.numeric(fAlpha))
     stopifnot(is.numeric(fBeta))
     stopifnot(is.numeric(fGamma))
-    
+
     # Check if clusterMethod is one of the options
     stopifnot(clusterMethod == "Euclidean" ||
                 clusterMethod == "Mahalanobis")
-    
-    
+
+
     # Check if centroid_init is one of the options
     stopifnot(centroid_init %in% c("None", "BBO", "GA", "FA"))
-    
+
     # Check if hard is true or false
     stopifnot(hard %in% c("True", "False"))
-    
+
     FCM_helper(
       image_path,
       save_to_path,
@@ -108,7 +109,7 @@ FCM_helper <-
            fBeta,
            fGamma) {
     output = system2(
-      "./FCM_Package.exe",
+      "./inst/FCM_Package.exe",
       c(
         image_path,
         save_to_path,
