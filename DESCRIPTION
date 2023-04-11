@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: c(
     person("Daniel", "Krasnov", email = "danielkrasnovdk@hotmail.com", role = "aut", comment = c(ORCID = "0009-0003-4104-3162")),
     person("Keiran", "Malott", email = "kmalott@student.ubc.ca", role = "aut", comment = c(ORCID = "0009-0007-0844-8036")),
-    person("Xiaoping", "Shi", email = "xiaoping.shi@ubc.ca", role = c("aut","fnd"), comment = c(ORCID = "0000-0001-7981-0708.")))
+    person("Xiaoping", "Shi", email = "xiaoping.shi@ubc.ca", role = c("aut","fnd","cre"), comment = c(ORCID = "0000-0001-7981-0708.")))
 Description: Image segmentation using Fuzzy C Means clustering with either the Euclidean or Mahalanobis distance. Output can either be hard or fuzzy segmentations. You may also specify a centroid initialization using the firefly algorithm, the genetic algorithm, or the Biogeography-based optimization algorithm.
 License: `use_mit_license()`
 Encoding: UTF-8
