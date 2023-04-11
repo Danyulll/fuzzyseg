@@ -109,7 +109,7 @@ FCM_helper <-
            fBeta,
            fGamma) {
     output = system2(
-      "./FCM_Package.exe",
+      "./inst/FCM_Package.exe",
       c(
         image_path,
         save_to_path,
