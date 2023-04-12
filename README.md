@@ -50,7 +50,7 @@ FCM(".//data//src//apples.jpg","C://", numClust=3L, m=2,clusterMethod="Euclidean
 ```
 FCM(".//data//src//birad4.jpg","C://", numClust=3L, m=2,clusterMethod="Euclidean")
 ```
-![segmented mammogram](/data/results/birad_euc_base.jpeg "birad_euc_base.jpeg"=250x250)
+![segmented mammogram](/data/results/birad_euc_base.jpeg "birad_euc_base.jpeg")
 
 
 #### FCM with Euclidean distance and BBO centroid initialization:
@@ -62,7 +62,7 @@ FCM(".//data//src//apples.jpg","C://", numClust=3L, m=2,clusterMethod="Euclidean
 ```
 FCM(".//data//src//birad4.jpg","C://", numClust=3L, m=2,clusterMethod="Euclidean", centroid_init="BBO",  error=0.001, popSize=50L, maxGen=50L, bboAlpha=0.25, E=1, I=1, initError=0.001)
 ```
-![segmented mammogram](/data/results/birad_euc_bbo.jpeg "birad_euc_bbo.jpeg"=250x250)
+![segmented mammogram](/data/results/birad_euc_bbo.jpeg "birad_euc_bbo.jpeg")
 
 
 #### FCM with Euclidean distance and GA centroid initialization:
@@ -74,7 +74,7 @@ FCM(".//data//src//apples.jpg","C://", numClust=3L, m=2,clusterMethod="Euclidean
 ```
 FCM(".//data//src//birad4.jpg","C://", numClust=3L, m=2,clusterMethod="Euclidean", centroid_init="GA",  error=0.001,  mutationRate=0.25, mutationStrength=1, initError=0.001)
 ```
-![segmented mammogram](/data/results/birad_euc_ga.jpeg "birad_euc_ga.jpeg"=250x250)
+![segmented mammogram](/data/results/birad_euc_ga.jpeg "birad_euc_ga.jpeg")
 
 
 #### FCM with Euclidean distance and Firefly centroid initialization:
