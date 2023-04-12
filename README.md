@@ -131,7 +131,7 @@ FCM(".//data//src//birad4.jpg","C://", numClust=3L, m=2,clusterMethod="Mahalanob
 FCM(".//data//src//apples.jpg","C://", numClust=3L, m=2,clusterMethod="Mahalanobis", centroid_init="GA",  error=0.001,  mutationRate=0.25, mutationStrength=1, initError=0.001)
 ```
 
-<img src="./inst/inst/data/results/apples_mah_ga.jpeg" alt="drawing" width="200"/>
+<img src="./inst/data/results/apples_mah_ga.jpeg" alt="drawing" width="200"/>
 
 ```r
 FCM(".//data//src//birad4.jpg","C://", numClust=3L, m=2,clusterMethod="Mahalanobis", centroid_init="GA",  error=0.001,  mutationRate=0.25, mutationStrength=1, initError=0.001)
