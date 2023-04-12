@@ -31,9 +31,11 @@ FCM("./path","./saveto", numClust=3L, m=2,clusterMethod="Euclidean")
 The R package contains the following two images that can be used as examples and for testing purposes.
 
 The first image is of a bunch of apples "apples.jpg":
+
 ![Basket of apples](/data/src/apples.jpg "apples.jpg")
 
-The second image is a mammogram "birad4.jpg"
+The second image is a mammogram "birad4.jpg":
+
 ![Mammogram](/data/src/birad4.jpg "birad4.jpg")
 
 
@@ -77,18 +79,14 @@ FCM(".//data//src//birad4.jpg","C://", numClust=3L, m=2,clusterMethod="Euclidean
 
 #### FCM with Euclidean distance and Firefly centroid initialization:
 ```
-FCM(".//data//src//apples.jpg","C://", numClust=3L, m=2,clusterMethod="Euclidean", centroid_init="firefly",  error=0.001, initError=0.001, fAlpha=0.05, fBeta=1, fGamma=1.5)
+FCM(".//data//src//apples.jpg","C://", numClust=3L, m=2, clusterMethod="Euclidean", centroid_init="firefly",  error=0.001, initError=0.001, fAlpha=0.05, fBeta=1, fGamma=1.5)
 ```
 ![segmented apples](/data/results/apples_euc_fa.jpeg "apples_euc_fa.jpeg")
 
 ```
-FCM(".//data//src//birad4.jpg","C://", numClust=3L, m=2,clusterMethod="Euclidean", centroid_init="firefly",  error=0.001, initError=0.001, fAlpha=0.05, fBeta=1, fGamma=1.5)
+FCM(".//data//src//birad4.jpg","C://", numClust=3L, m=2, clusterMethod="Euclidean", centroid_init="firefly",  error=0.001, initError=0.001, fAlpha=0.05, fBeta=1, fGamma=1.5)
 ```
 ![segmented mammogram](/data/results/birad_euc_fa.jpeg "birad_euc_fa.jpeg")
-
-
-
-
 
 
 
@@ -130,11 +128,11 @@ FCM(".//data//src//birad4.jpg","C://", numClust=3L, m=2,clusterMethod="Mahalanob
 
 #### FCM with Mahalanobis distance and Firefly centroid initialization:
 ```
-FCM(".//data//src//apples.jpg","C://", numClust=3L, m=2,clusterMethod="Mahalanobis", centroid_init="firefly",  error=0.001, initError=0.001, fAlpha=0.05, fBeta=1, fGamma=1.5)
+FCM(".//data//src//apples.jpg","C://", numClust=3L, m=2, clusterMethod="Mahalanobis", centroid_init="firefly",  error=0.001, initError=0.001, fAlpha=0.05, fBeta=1, fGamma=1.5)
 ```
 ![segmented apples](/data/results/apples_mah_fa.jpeg "apples_mah_fa.jpeg")
 
 ```
-FCM(".//data//src//birad4.jpg","C://", numClust=3L, m=2,clusterMethod="Mahalanobis", centroid_init="firefly",  error=0.001, initError=0.001, fAlpha=0.05, fBeta=1, fGamma=1.5)
+FCM(".//data//src//birad4.jpg","C://", numClust=3L, m=2, clusterMethod="Mahalanobis", centroid_init="firefly",  error=0.001, initError=0.001, fAlpha=0.05, fBeta=1, fGamma=1.5)
 ```
 ![segmented mammogram](/data/results/birad_mah_fa.jpeg "birad_mah_fa.jpeg")
